@@ -8,6 +8,7 @@ Version control is pretty much how developers make save points while they are wo
 * What is a branch and why would you use one?
 
 a branch is kind of like creating a split path for code, files etc. when you make a branch all the changes, additions and so on only happen in the branch, while the master remains the same. this allows for different chunks of code to be written without affecting the master, and is good for testing code before merging with the master, or allowing multiple people to work on the same project.
+
 * What is a commit? What makes a good commit message?
 
 a commit is the process of creating a new save point with all the changes that have been made to the file. a good commit message concisely tells the user what has changed in the current version from the previous one.
