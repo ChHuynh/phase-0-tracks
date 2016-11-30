@@ -1,0 +1,24 @@
+#contact-info {
+  font-size: .8em;
+}
+
+.job {
+  background-color: #e9e5dc;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.accomplishments {
+  font-size: .8em;
+}
+
+/* This is an example of applying a pseudoselector */
+.accomplishments:hover {
+background-color: yellow;
+}
+
+/* This is an example of applying CSS to a child element within an element */
+.accomplishments li {
+  font-family: sans-serif;
+}
