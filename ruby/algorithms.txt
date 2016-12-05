@@ -1,0 +1,10 @@
+1. look at how many floors are available and decide which floor you want to go to
+2. look at what floor you are currently on
+3. if the floor you want to go to is a higher numbered floor, press the up arrow on the keypad outside the elevator door, otherwise press the down arrow. if you are on the same numbered floor that you want to go to, then you do not need to use the elevator.
+3.wait for the door to enter the elevator to open.
+4. once the elevator door is open, enter the elevator
+5.press the button with the number of the floor you want to go to.
+6.wait for the door to close. the elevetor will move up or down. whenever the elevator stops, look at the floor display.
+7.if the floor display inside the elevator does not display the floor you want to go to, continue waiting.
+8. once the floor display inside the elevator displays the floor you wish to go to, wait for the door to open.
+9. once the door is open, exit the elevator.
