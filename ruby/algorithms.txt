@@ -1,3 +1,4 @@
+robot elevator
 1. look at how many floors are available and decide which floor you want to go to
 2. look at what floor you are currently on
 3. if the floor you want to go to is a higher numbered floor, press the up arrow on the keypad outside the elevator door, otherwise press the down arrow. if you are on the same numbered floor that you want to go to, then you do not need to use the elevator.
@@ -8,3 +9,16 @@
 7.if the floor display inside the elevator does not display the floor you want to go to, continue waiting.
 8. once the floor display inside the elevator displays the floor you wish to go to, wait for the door to open.
 9. once the door is open, exit the elevator.
+
+
+HOW TO MAKE TEA FOR HUMANS
+1. fill kettle with water
+2. place kettle on stove.
+3. turn on stove to medium or high heat
+4. wait until water is boiling
+5. turn off stove
+6. pour hot water into a mug
+7. steep your favorite tea bag into the mug with hot water
+8. remove tea bag when tea has reached desired strength.
+9. add sugar or honey until tea has reached desired sweetness.
+10. enjoy your tea!
