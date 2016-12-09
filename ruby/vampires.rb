@@ -67,3 +67,4 @@ elsif
 end
 	current_count += 1
 end
+print "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
