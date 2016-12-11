@@ -1,3 +1,28 @@
-body {
-	background-color: #570E51;
+body{
+  background-color: #ffc7aa;
+}
+header {
+  background-color: #80bfff;  
+}
+.column-1{
+  background-color: #7887AB;
+  font-family: Arial;
+  border: solid black 1px;
+  float: left;
+  width: 45%;
+}
+.column-2{
+  background-color: #805015;
+  font-family: Helvetica;
+  color: rgb(150,150,150);
+  border: solid black 1px;
+  float: right;
+  width: 45%;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  background-color: #80bfff;
+  width: 100%;
 }
