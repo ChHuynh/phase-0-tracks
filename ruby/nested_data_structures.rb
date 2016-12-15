@@ -43,3 +43,10 @@ puts adventurer[:warrior][:equipment][1]
 
 adventurer[:priest][:equipment].push("holy robes")
 puts adventurer[:priest][:equipment]
+
+puts adventurer[:thief][:primary_attribute]
+
+puts adventurer[:mage][:job]
+
+
+
