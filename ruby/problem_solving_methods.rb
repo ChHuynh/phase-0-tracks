@@ -5,21 +5,21 @@
 # if it doesnt, increment the variable, and loop to match the next element in the array
 #
 
-#testarray = [2 ,4, 6, 8, 10, 22, 100]
-#def searcharray(n, arr)
-#	testvar = 0
-#	if arr.include?(n) == false
-#	puts "nil"
-#	return
-#	end
-#	arr.each do |testvar|
-#	if n == arr[testvar]
-#	puts testvar
-#	end
-#end
-#end
+testarray = [2 ,4, 6, 8, 10, 22, 100]
+def searcharray(n, arr)
+	testvar = 0
+	if arr.include?(n) == false
+	puts "nil"
+	return
+	end
+	arr.each do |testvar|
+	if n == arr[testvar]
+	puts testvar
+	end
+end
+end
 
-#searcharray(200, testarray)
+searcharray(10, testarray)
 
 ###
 
