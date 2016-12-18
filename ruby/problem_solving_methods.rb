@@ -64,9 +64,9 @@ def sort_array(x)
   loop do
     completion = false
 
-    (n-1).times do |arr_num|
-      if x[arr_num] < x[arr_num+1]
-        x[arr_num], x[arr_num+1]=x[arr_num+1], x[arr_num]
+    (n-1).times do |arr|
+      if x[arr] < x[arr+1]
+        x[arr], x[arr+1]=x[arr+1], x[arr]
         completion = true
       end     
     end        
@@ -76,5 +76,6 @@ def sort_array(x)
   x
 end           
 
-a = [5, 1, 100, 50]
+a = [5, 1, 100, 50, 20, 200, 1000, 3, 24]
+p a.length
 p sort_array(a)
