@@ -118,3 +118,26 @@ remove_an_item(new_list, "lemonade")
 update_quantity(new_list, "ice_cream", 1)
 print_grocery_list(new_list)
 #test output
+
+###
+#reflection
+
+#What did you learn about pseudocode from working on this challenge?
+# => I learned about making pseudocode more specific to what we are trying to do. previously i've only mostly been using psuedocode to help build a basic framework
+
+#What are the tradeoffs of using arrays and hashes for this challenge?
+# =>  arrays can only hold singular data and hashes were really good for holding 2 sets of data in a singular object.
+
+#What does a method return?
+# =>  a method returns data of whatever you asked the method to do
+
+#What kind of things can you pass into methods as arguments?
+# =>  strings, numbers, other methods.
+
+#How can you pass information between methods?
+# =>  you can pass information between methods by saving its output outside of a method. 
+#     in our code above we used "our_list = grocery_list("apple carrot pizza cereal")""
+
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+# =>  I think I got a little bit more comfortable using arrays and hashes in this challenge. We wanted to refactor our code for adding quantity to list
+#     but was running out of time with my pairing partner, so we would most likely research this on our own time.
