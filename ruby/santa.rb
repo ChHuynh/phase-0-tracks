@@ -1,19 +1,24 @@
 class Santa
-	def initialize(gender, ethnicity)
+	attr_reader :ethnicity
+	attr_accessor :gender, :age, :reindeer_ranking
+
+	def initialize(gender, ethnicity, age)
 		puts "Initializing Santa instance ..."
 		@gender = gender
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age = 0
-	end
+		@age = age
+	end #init end
 	#makes santa speak
 	def Speak
 		puts "Ho, ho, ho! Haaappy holidays!"
-	end
+	end #speak end
+	
 	#makes santa eat a cookie
 	def eat_milk_and_cookies(cookie)
 		puts "That was a good #{cookie} here!"
-	end
+	end #cookie end
+	
 	#status message about santa
 	def about
 		puts "Gender: #{@gender}"
@@ -21,46 +26,54 @@ class Santa
 		puts "reindeer_ranking:  #{@reindeer_ranking}"
 		puts "age: #{@age}"
 	end
-end
-###
-#santa = Santa.new("male", "Japanese")
-#santa.Speak
-#santa.eat_milk_and_cookies("chocolate chip cookie")
-#santa.about
+	
+	# adds a year to santa's age
+	def celebrate_birthday 
+	@age += 1
+	end
 
-###
-#user input for initializing their own santa
-
-
-def santa_add
-santas = []
-puts "Welcome to the santa database program"
-quit_function = false
-	until quit_function
-		puts "Would you like to add a santa to the database? (y/n)"
-		valid_input = false
-		until valid_input
-			yes_no = gets.chomp
-			
-			if yes_no == "y" || yes_no == "Y"
-				puts "What is the santa's gender?"
-				gen = gets.chomp
-				puts "What is santa's ethnicity?"
-				eth = gets.chomp
-				valid_input = true
-				santas << Santa.new(gen, eth)
-
-			elsif yes_no == "n" || yes_no == "N"
-			puts "Thank you for using the santa database program."
-			quit_function = true
-			valid_input = true
-			santas.each do |santa|
-			santa.about
+	# puts reindeer at the end of the list
+	def get_mad_at(reindeer) 
+		@reindeer_ranking.each do |name|
+			if name == reindeer
+				@reindeer_ranking.delete(reindeer)
+				@reindeer_ranking << reindeer
 			end
 		end
 	end
+
+	#reindeer shuffle
+	def reindeer_shuffle
+		@reindeer_ranking.shuffle!
+	end
+
+
+
+end #class end
+
+### creating lots and lots of santas
+ 
+	def santa_machine(number)
+	
+	example_genders = ["male", "female", "agender", "bigender", "gender fluid", "other" ]
+	example_ethnicities = ["black", "white", "Japanese", "lizzard", "merpeople" , "plant"]
+	number.times do
+  		santa = Santa.new(example_genders.sample, example_ethnicities.sample, rand(0..140))
+  		santa.reindeer_shuffle
+  		santa.about
+  		end
+
 end
-end
+
 ###
 
-santa_add
+### test code
+#santa = Santa.new("male", "Japanese")
+#santa.Speak
+#santa.eat_milk_and_cookies("chocolate chip cookie")
+#santa.get_mad_at("Dasher")
+#santa.celebrate_birthday
+#santa.gender = "robot"
+#santa.about
+santa_machine(50)
+
