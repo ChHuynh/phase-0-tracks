@@ -1,7 +1,5 @@
 require_relative 'game'
 
-# rspec -fd game_spec.rb
-
 describe Game do
   let(:game) { Game.new("hello") }
 
