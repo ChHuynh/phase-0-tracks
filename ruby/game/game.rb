@@ -50,7 +50,7 @@ until game.is_over
   		if game.guess_check.include? letter
 			puts "you have already guessed the letter #{letter}, guess another letter."
 		else
-			game.guess(letter)
+    			game.guess(letter)
 			repeat = false
 		end
 	end
@@ -69,11 +69,11 @@ until game.is_over
    	end
 
   	if game.secret.uniq.sort == game.guesses.uniq.sort #compares the arrays, if they're the same it means the game is over
-    	game.is_over = true
-    	game.secret.join("")
+   	  game.secret.join("")
+      game.is_over = true
     	puts "congratulations, you have figured out the word!"
   	elsif game.guess_count == 0
     	puts "well, you didnt quite figure out the word. it was #{game.secret.join("")}! better luck next time!"
-    break
+    game.is_over = true
 	end
 end
