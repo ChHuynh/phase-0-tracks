@@ -107,4 +107,13 @@ end
 #=======================================================================
 # Reflection Section
 #
-#
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# => the state was a string, and the data within states were symbols
+# What does require_relative do? How is it different from require?
+# => require_relataive requires relative to the current directory, require needs the filepath to propery run
+# What are some ways to iterate through a hash?
+#  each.do is pretty much the go to method for iterating through a hash, can also do things like select.do or keep.do, depending on how you want to iterate
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# the variables for the most part werent really necessary because they were already instance variables.
+# What concept did you most solidify in this challenge?
+# i had a better idea of calling on nested elements, and was something that I probably need to review.
