@@ -37,7 +37,7 @@ adventurer = {
 
 }
 
-puts adventurer[:warrior][:equipment][1]
+puts adventurer
 adventurer[:warrior][:equipment][1] = "great shield"
 puts adventurer[:warrior][:equipment][1]
 
