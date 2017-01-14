@@ -24,6 +24,7 @@ Ryo|55|mage
 DELETE FROM adventurer WHERE has_party="true";
 (added the other adventurers back in because most of them had a party already)
 
+
 sqlite> SELECT * from adventurer INNER JOIN class ON adventurer.class_id = class.id;
 2|Tetsu|33|false|3|3|thief
 3|Eve|25|true|1|1|knight
