@@ -24,6 +24,22 @@ SQL
 
 
 
+#create user functionality
+
+#add game
+	def add_game(data, name, platform, month, year)
+	data.execute("INSERT INTO games (name, platform, month, year) VALUES (?, ?, ?, ?)", [name, platform, month, year])
+	end
+
+#look at games been added to list
+	def all_games
+	data.execute("SELECT * FROM games")
+	end
+
+#look at platforms (PC, PS4, etc)
+	def platforms(plat)
+	data.execute("SELECT * FROM games WHERE platform = ?", [plat])
+	end
 
 
 
@@ -32,3 +48,45 @@ SQL
 #driver code
 
 data.execute(create_table)
+
+
+
+
+puts "options:"
+puts "1. add game"
+puts "2. remove game"
+puts "3. view list"
+puts "4. search by"
+puts "5. end the program"
+puts "enter number of desired action"
+action = gets.chomp
+
+	if action == "1" #adding a game to the database
+		puts "please enter the game title."
+		title = gets.chomp
+		puts "please enter the platform of the game"
+		game_platform = gets.chomp
+		puts "please enter the month the game will be released in."
+		game_month = gets.chomp
+		puts "please enter the year the game will be released in."
+		game_year = gets.chomp
+		add_game(data, title, game_platform, game_month, game_year)
+		puts "game has been added to list."
+	end
+
+#	if action == 2
+#		#remove game stuff here
+#	end
+
+#	if action == 3
+#	end
+	
+
+#	if action == 4
+#	end
+	
+
+#	if action == 5
+#		finished = true
+#	end
+
