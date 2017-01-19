@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Cute pets for you!</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles.css">
+	
+		<script type="text/javascript" src="jquery-3.1.1.min.js"> </script>
+		
+		<script>
+		$(document).ready(function(){
+    	$(cats).click(function(){
+        $("p").replaceWith(
+        "<p>Cats are really cute and furry animals, they are totally pretty rad and are really curious at times, other times they are tiny ferocious cute furballs.</p>");
+    	});
+		});
+		</script>
+		
+		<script>	
+ 		$(document).ready(function(){
+    	$(dogs).click(function(){
+        $("p").replaceWith(
+        "<p>Dogs are totally loyal and are always looking to play with you. they will always be cute by your side!</p>");
+    	});
+		});
+		</script>
+
+		<script>	
+ 		$(document).ready(function(){
+    	$(lizards).click(function(){
+        $("p").replaceWith(
+        "<p>Lizards are the chillest chiller animal known to chill animal kind, thats kinda cute I guess</p>");
+    	});
+		});
+		</script>
+
+		<script>	
+ 		$(document).ready(function(){
+    	$(hamsters).click(function(){
+        $("p").replaceWith(
+        "<p>they're literally balls of cute!</p>");
+    	});
+		});
+		</script>
+
+		<script>	
+ 		$(document).ready(function(){
+    	$(fish).click(function(){
+        $("p").replaceWith(
+        "<p>I guess?</p>");
+    	});
+		});
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<h1>Pets</h1>
+			<h2>Find the best pet for you!</h2>
+		</header>
+
+		<main id="content-section">
+			<h3>What is the cutest pet for your home?</h3>
+			<p id="intro">Click on the animal that interests you to learn more about its cute factor!</p>
+			<ul id="animals">
+				<li id="cats">Cats</li>
+				<li id="dogs">Dogs</li>
+				<li id="lizards">Lizards</li>
+				<li id="hamsters">Hamsters</li>
+				<li id ="fish">Fish</li>
+			</ul>
+		</main>
+	</body>
+	<script src="script.js"></script>
+
+</html>
