@@ -1,5 +1,6 @@
 # require gems
 require 'sinatra'
+require "sinatra/reloader"
 require 'sqlite3'
 
 set :public_folder, File.dirname(__FILE__) + '/static'
@@ -14,7 +15,37 @@ get '/' do
 end
 
 get '/students/new' do
-  erb :new_student
+  	erb :new_student
+end
+
+get '/sf' do
+	@students = db.execute("SELECT name, campus, age FROM students WHERE campus = 'SF'")
+	erb :home
+end
+
+get '/sd' do
+	@students = db.execute("SELECT name, campus, age FROM students WHERE campus = 'SD'")
+	erb :home
+end
+
+get '/nyc' do
+	@students = db.execute("SELECT name, campus, age FROM students WHERE campus = 'NYC'")
+	erb :home
+end
+
+get '/chi' do
+	@students = db.execute("SELECT name, campus, age FROM students WHERE campus = 'CHI'")
+	erb :home
+end
+
+get '/sea' do
+	@students = db.execute("SELECT name, campus, age FROM students WHERE campus = 'SEA'")
+	erb :home
+end
+
+
+get '/students/search' do
+	erb :search
 end
 
 # create new students via
@@ -24,4 +55,27 @@ post '/students' do
   redirect '/'
 end
 
+post '/search' do
+	
+	if params['campus'] == 'SF'
+	redirect '/sf'
+	
+	elsif params['campus'] == 'SD'  
+	redirect '/sd'
+
+	elsif params['campus'] == 'NYC'
+	redirect '/nyc'
+	
+	elsif params['campus'] == 'CHI'
+	redirect '/chi'
+	
+	elsif params['campus'] == 'SEA'
+	redirect '/sea'
+	end
+
+end
+
+
+
 # add static resources
+
